@@ -1,0 +1,34 @@
+/* GENERICS */
+header{
+    height: 100px;
+    border: 1px dashed green;
+}
+
+main{
+    height: calc(100vh - 160px);
+    overflow-y: auto;
+    background-color: #7fffd4;
+}
+
+footer{
+    height: 60px;
+    border: 1px solid red;
+}
+
+footer p{
+    line-height: 60px;
+}
+
+/* HEADER */
+/* play button */
+#play{
+    border: 1px solid #a7a7a7;
+    border-radius: 3px;
+    box-shadow: rgba(255,255,255,.6) 0 1px 0 inset;
+    
+}
+
+#play:active {
+  border-color: #7fffd4;
+  box-shadow: #488f77 0 0 3px 2px;
+}
