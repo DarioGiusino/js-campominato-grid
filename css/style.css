@@ -1,4 +1,4 @@
-/* GENERICS */
+/* # GENERICS */
 header{
     height: 100px;
 }
@@ -17,12 +17,12 @@ footer p{
     line-height: 60px;
 }
 
-/* UTILITIES */
+/*  # UTILITIES */
 .brd{
     border: 1px dashed green;
 }
 
-/* HEADER */
+/* # HEADER */
 /* play button */
 #play{
     border: 1px solid #a7a7a7;
@@ -34,8 +34,8 @@ footer p{
   box-shadow: #488f77 0 0 3px 2px;
 }
 
-/* MAIN */
-.grid{
+/* # MAIN */
+#grid{
     margin: 60px;
     height: calc(100vh - 280px);
     display: flex;
@@ -43,9 +43,17 @@ footer p{
     align-content: flex-start;
 }
 
-.grid .cell{
+#grid .cell{
     width: calc(100% / 10);
     height: calc(100% / 10);
-    border: 1px solid red;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
 
+#grid .cell.clicked{
+    background-color: #06f5f5;
 }

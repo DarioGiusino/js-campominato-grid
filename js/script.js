@@ -19,3 +19,28 @@ Aggiungere una select accanto al bottone di generazione, che fornisca una scelta
 Note:
 - questo bonus richiederà una riflessione extra per quel che riguarda il calcolo della larghezza delle celle ;)
 */
+
+// # FUNZIONI ------------------------
+function createCell() {
+    const cell = `<div class="cell"></div>`;
+    grid.innerHTML += cell;
+}
+
+// # FASE PRELIMINARE ------------------------
+// recupero elementi dal DOM
+const button = document.getElementById('play');
+const grid = document.getElementById('grid');
+
+// valori iniziali
+const rows = 10;
+const cols = 10;
+const totalCells = rows * cols;
+
+// # AVVIO LOGICA
+button.addEventListener('click', function(){
+
+    for (let i = 0; i < totalCells; i++){
+       createCell();
+    }
+
+});
