@@ -33,6 +33,7 @@ function createCell(content) {
 // recupero elementi dal DOM
 const button = document.getElementById('play');
 const grid = document.getElementById('grid');
+const titleElement = document.getElementById('starting-title');
 
 // valori iniziali
 const rows = 10;
@@ -40,8 +41,16 @@ const cols = 10;
 const totalCells = rows * cols;
 
 // # AVVIO LOGICA
+// al click del bottone play
 button.addEventListener('click', function(){
+    // rimuovo titolo iniziale
+    titleElement.remove();
+
+    // pulisco griglia e aggiungo classe per sistemare le celle
+    grid.innerHTML='';
+    grid.classList.add('align-content-start')
     
+    // creo le celle in griglia
     for (let i = 1; i <= totalCells; i++){
         const cell = createCell(i);
 
