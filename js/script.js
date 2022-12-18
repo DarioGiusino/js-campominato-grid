@@ -50,15 +50,16 @@ button.addEventListener('click', function(){
     grid.innerHTML='';
     grid.classList.add('align-content-start')
     
-    // creo le celle in griglia
+    // per il totale delle celle...
     for (let i = 1; i <= totalCells; i++){
+        // creo tot celle
         const cell = createCell(i);
-
+        // aggiungo classe al click e stampo in console numero relativo
         cell.addEventListener('click', function(){
             cell.classList.toggle('clicked');
             console.log(i);
         });
-
+        // inserisco in griglia
         grid.appendChild(cell);
     }
 
