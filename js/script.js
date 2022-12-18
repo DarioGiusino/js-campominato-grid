@@ -22,9 +22,10 @@ Note:
 
 // # FUNZIONI ------------------------
 // creare una singola cella
-function createCell() {
+function createCell(content) {
     const cell = document.createElement('div');
     cell.classList.add('cell');
+    cell.append(content)
     return cell;
 }
 
@@ -41,8 +42,8 @@ const totalCells = rows * cols;
 // # AVVIO LOGICA
 button.addEventListener('click', function(){
     
-    for (let i = 0; i < totalCells; i++){
-        const cell = createCell();
+    for (let i = 1; i <= totalCells; i++){
+        const cell = createCell(i);
 
         cell.addEventListener('click', function(){
             cell.classList.add('clicked');
