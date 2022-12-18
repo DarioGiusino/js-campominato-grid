@@ -46,7 +46,7 @@ button.addEventListener('click', function(){
         const cell = createCell(i);
 
         cell.addEventListener('click', function(){
-            cell.classList.add('clicked');
+            cell.classList.toggle('clicked');
         });
 
         grid.appendChild(cell);
