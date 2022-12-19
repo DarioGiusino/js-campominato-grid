@@ -43,7 +43,7 @@ const totalCells = rows * cols;
 // # AVVIO LOGICA
 // al click del bottone play
 button.addEventListener('click', function(){
-    // pulisco griglia e aggiungo classe per sistemare le celle
+    // pulisco griglia
     grid.innerHTML='';
     
     // per il totale delle celle...
