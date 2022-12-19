@@ -43,12 +43,8 @@ const totalCells = rows * cols;
 // # AVVIO LOGICA
 // al click del bottone play
 button.addEventListener('click', function(){
-    // rimuovo titolo iniziale
-    titleElement.remove();
-
     // pulisco griglia e aggiungo classe per sistemare le celle
     grid.innerHTML='';
-    grid.classList.add('align-content-start')
     
     // per il totale delle celle...
     for (let i = 1; i <= totalCells; i++){
