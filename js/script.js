@@ -42,9 +42,12 @@ const totalCells = rows * cols;
 
 // # AVVIO LOGICA
 // al click del bottone play
-button.addEventListener('click', function(){
+button.addEventListener('click', function(event){
     // pulisco griglia
     grid.innerHTML='';
+
+    // cambio testo al button
+    event.target.innerText = 'Restart';
     
     // per il totale delle celle...
     for (let i = 1; i <= totalCells; i++){
